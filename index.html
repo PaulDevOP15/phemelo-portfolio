@@ -1,429 +1,499 @@
 <!doctype html>
-<!-- Root HTML document for Phemelo Makaota's portfolio -->
-<html lang="en" class="h-100" data-bs-theme="auto">
+<html lang="en">
   <head>
-    <!-- Basic document metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
     <meta
-      name="author"
-      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+      name="description"
+      content="Phemelo Makaota is a junior full-stack web developer in Pretoria, South Africa, building websites, web applications, and workflow automations."
     />
-    <meta name="generator" content="Astro v5.13.2" />
-
-    <!-- Page title shown in the browser tab -->
-    <title>Cover Template · Bootstrap v5.3</title>
-
-    <!-- Canonical URL for SEO and link consistency -->
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.3/examples/cover/"
-    />
-
-
-    <!-- Core Bootstrap 5 CSS from CDN -->
-    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Browser theme color (used on some mobile browsers) -->
-    <meta name="theme-color" content="#712cf9" />
-
-    <!-- Custom stylesheet for additional page-specific styling -->
-    <link href="style.css" rel="stylesheet" />
-
-    <!-- Bootstrap icons CDN (used for social and UI icons) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- Additional helper styles from the Bootstrap example template -->
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: #0000001a;
-        border: solid rgba(0, 0, 0, 0.15);
-        border-width: 1px 0;
-        box-shadow:
-          inset 0 0.5em 1.5em #0000001a,
-          inset 0 0.125em 0.5em #00000026;
-      }
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
-      .bi {
-        vertical-align: -0.125em;
-        fill: currentColor;
-      }
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
-      .bd-mode-toggle .bi {
-        width: 1em;
-        height: 1em;
-      }
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
+    <meta name="author" content="Phemelo Makaota" />
+    <meta name="theme-color" content="#111817" />
+    <link rel="canonical" href="https://phemelo-portfolio.netlify.app/" />
+    <title>Phemelo Makaota | Junior Full-Stack Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
-  <!-- Main page body with a light background -->
-  <body class="bg-light">
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="check2" viewBox="0 0 16 16">
-        <path
-          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
-        ></path>
-      </symbol>
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path
-          d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
-        ></path>
-      </symbol>
-      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
-        <path
-          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-        ></path>
-        <path
-          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"
-        ></path>
-      </symbol>
-      <symbol id="sun-fill" viewBox="0 0 16 16">
-        <path
-          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-        ></path>
-      </symbol>
-    </svg>
-    <!-- Fixed-position theme toggle control in the bottom-right corner -->
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
-    <!-- Full-screen hero/banner section with overlay and navigation header -->
-    <div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
-      <div class="overlay"></div>
-      <header class="px-5 p-3 text-white fixed-top scrolling">
-        <div>
-          <h3 class="float-md-start text-center">Portfolio</h3>
-          <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-             <a class="nav-link fw-bold py-1 px-0" href="#about-us">About Me</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#projects">Projects</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-      <main class="text-center">
-        <!-- Main hero heading -->
-        <h1 class="display-1">I Am Phemelo</h1>
-        <!-- Subtitle text -->
-        <span id="type" class="lead">Full Stack Web Developer</span>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      </main>
-    </div>
+    <header class="site-header">
+      <div class="site-header__inner page-width">
+        <a class="brand" href="#home" aria-label="Phemelo Makaota, home">
+          <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span>Phemelo<span class="brand__accent">.</span></span>
+        </a>
 
-    <!-- About section: brief introduction and skills overview -->
-    <section id="about-us">
-      <div class="container p-5">
-         <div class="card">
-             <div class="card-body">
-              <div class="row p-3">
-                 <div class="col-md-6 col-sm-12">
-                      <div class="row">
-                          <div class="col-md-5">
-                              <img src=".\assets\banner.jpeg" class="img-fluid" alt="...">
-                          </div>
-                          <div class="col-md-7 mt-3">
-                              <p><strong>Name:</strong> Phemelo Makaota</p>
-                              <p><strong>Profile:</strong>Full Stack Developer</p>
-                              <p><strong>Email:</strong> makaotap2@gmail.com</p>
-                              <p><strong>Contact:</strong>+27 74 050 8355</p>
-                              <p><strong>Skills:</strong>
-                              <span class="badge rounded-pill bg-dark">HTML</span>
-                              <span class="badge rounded-pill bg-dark">CSS</span>
-                              <span class="badge rounded-pill bg-dark">git</span>
-                              <span class="badge rounded-pill bg-dark">javascript</span>
-                              <span class="badge rounded-pill bg-dark">firebase</span>
-                              <span class="badge rounded-pill bg-dark">OOP</span>
-                              <span class="badge rounded-pill bg-dark">ReactJS</span>
-                              <span class="badge rounded-pill bg-dark">Redux</span>
-                              <span class="badge rounded-pill bg-dark">NodeJS</span>
-                              <span class="badge rounded-pill bg-dark">MongoDB</span>
-                              <span class="badge rounded-pill bg-dark">Express</span>
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 mt-3">
-                      <h1 class="text-center text-md-start"><mark>About me</mark></h1>
-                      <p class="lead">I am a junior full stack web developer with a passion for building efficient, user-friendly web applications. I have experience working with both front-end and back-end technologies, including HTML, CSS, JavaScript, and frameworks like React and Node.js. I enjoy tackling challenges that require problem-solving and creative thinking, and I constantly seek opportunities to improve my coding skills and stay updated with emerging web technologies</p>
-                  </div>
-              </div>
-             </div>
-         </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          class="primary-navigation"
+          id="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#services">Services</a>
+          <a class="navigation-contact" href="#contact">Contact</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- Projects section: showcases selected portfolio projects as cards -->
-    <section id="projects">
-        <div class="container p-3">
-            <h1 class="text-center"><mark>Projects</mark></h1>
-            <div class="row">
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Netflix Landing Page</h5>
-              <p class="card-text">Built this with HTML & CSS</p>
-               <a href="https://phemelo-watchmovies.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-netflix-clone.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
+    <main id="main-content">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+        <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+        <div class="hero__inner page-width">
+          <div class="hero__copy">
+            <p class="eyebrow"><span></span> Pretoria, South Africa</p>
+            <h1 id="hero-title">
+              Hi, I'm <span class="text-accent">Phemelo</span>.<br />
+              I build for the <span class="hero__emphasis">web.</span>
+            </h1>
+            <p class="hero__role">Junior Full-Stack Web Developer</p>
+            <p class="hero__intro">
+              I create thoughtful websites and web applications, and help
+              businesses bring their ideas online.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#projects">View My Work <span aria-hidden="true">↗</span></a>
+              <a class="button button--quiet" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
+              <a class="button button--quiet" href="assets/Phemelo-Makaota-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
             </div>
-            </div>
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/Tesla.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Tesla Landing Page</h5>
-              <p class="card-text">Built this website with HTML & CSS</p>
-              <a href=https://phemelo-ecars.netlify.app/ target="_blank" class="btn btn-primary">View Website</a>
-              <a href="https://github.com/PaulDevOP15/My-First-Test-Project.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/html_youtube.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Youtube Page</h5>
-              <p class="card-text">Built this with HTML & CSS</p>
-              <a href="https://phemelo-faketube.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-faketube-clone.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="http://res.cloudinary.com/ak-124210/image/upload/v1642434078/yjnzwmihmhghxkwnb6n9.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Twitter Page</h5>
-              <p class="card-text">Building Twitter with HTML & CSS</p>
-              <a href="https://phemelo-faketube.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-faketube-clone.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/reactintro.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">React JS</h5>
-              <p class="card-text">Javascript using React</p>
-              <a href="https://phemelo-faketube.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-faketube-clone.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
-            
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/react_airbnb.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Airbnb Clone</h5>
-              <p class="card-text">Built this with MERN Stack</p>
-              <a href="https://phemelohotels.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-airbnb.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
+            <p class="hero__availability"><span></span> Open to junior developer opportunities</p>
+          </div>
 
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="http://res.cloudinary.com/ak-124210/image/upload/v1668200511/uum4ptpgm3lroibx4j9e.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">TIC TAC TOE game</h5>
-              <p class="card-text">Built this using React</p>
-              <a href="https://phemelo-tictactoe.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-tictactoe.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
+          <div class="code-window" aria-label="A short JavaScript-style profile">
+            <div class="code-window__bar">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span>phemelo.js</span>
+              <span class="code-window__language">JavaScript</span>
             </div>
-            </div>
-            <div class="col-md-4 mt-3">
-            <div class="card">
-             <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/amazon.png" class="card-img-top" alt="...">
-             <div class="card-body">
-              <h5 class="card-title">Amazon Clone</h5>
-              <p class="card-text">Built this using React</p>
-              <a href="https://phemelo-amazon-store.netlify.app/" target="_blank" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/PaulDevOP15/phemelo-amazon-store.git" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"> CODE</i></a>
-             </div>
-            </div>
-            </div>
+            <pre><code><span class="code-purple">const</span> <span class="code-blue">developer</span> = {
+  <span class="code-cyan">name</span>: <span class="code-green">"Phemelo Makaota"</span>,
+  <span class="code-cyan">role</span>: <span class="code-green">"Junior Full-Stack Developer"</span>,
+  <span class="code-cyan">location</span>: <span class="code-green">"Pretoria, South Africa"</span>,
+  <span class="code-cyan">builds</span>: [<span class="code-green">"websites"</span>, <span class="code-green">"web apps"</span>],
+  <span class="code-cyan">openToWork</span>: <span class="code-orange">true</span>
+};</code></pre>
+            <div class="code-window__footer"><span class="code-pulse"></span> Ready to build something useful</div>
+          </div>
         </div>
+        <a class="hero__scroll" href="#projects"><span aria-hidden="true">↓</span> Scroll to explore</a>
+      </section>
+
+      <section class="section section--projects" id="projects" aria-labelledby="projects-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span> Selected work</p>
+            <h2 id="projects-title">Projects in <span class="text-accent">focus</span></h2>
+            <p>A few projects where I've put my skills into practice.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-card--featured">
+              <div class="project-card__visual">
+                <a
+                  class="image-viewer-link project-card__image-link"
+                  href="assets/projects/zwocoglam/Project1.png"
+                  target="_blank"
+                  rel="noopener"
+                  data-gallery="zwocoglam"
+                  data-caption="Zwocoglam Creations — website preview"
+                >
+                  <img
+                    src="assets/projects/zwocoglam/Project1.png"
+                    alt="Preview of the Zwocoglam Creations salon website"
+                    width="1172"
+                    height="632"
+                    loading="lazy"
+                  />
+                  <span class="image-hint">Open screenshots <span aria-hidden="true">↗</span></span>
+                </a>
+                <span class="project-status project-status--progress"><span></span> In development</span>
+              </div>
+              <div class="project-card__content">
+                <div class="project-card__title-row">
+                  <div>
+                    <p class="project-kicker">01 / Current project</p>
+                    <h3>Zwocoglam Creations</h3>
+                  </div>
+                </div>
+                <p class="project-card__description">
+                  A salon website in development, with appointment booking and
+                  tools for managing services and bookings.
+                </p>
+                <p class="project-role"><strong>My role:</strong> Full-stack development</p>
+                <ul class="feature-list">
+                  <li>Product catalogue and service selection</li>
+                  <li>Appointment availability and booking conflict handling</li>
+                  <li>Email notifications and admin authentication / management</li>
+                </ul>
+                <div class="tag-list" aria-label="Technologies">
+                  <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                </div>
+                <div class="project-gallery" aria-label="Zwocoglam Creations screenshot gallery">
+                  <a class="image-viewer-link" href="assets/projects/zwocoglam/Project2.png" target="_blank" rel="noopener" data-gallery="zwocoglam" data-caption="Zwocoglam Creations — Collections">
+                    <img src="assets/projects/zwocoglam/Project2.png" alt="Zwocoglam Creations collections page" width="1207" height="606" loading="lazy" />
+                    <span>Collections</span>
+                  </a>
+                  <a class="image-viewer-link" href="assets/projects/zwocoglam/Project3.png" target="_blank" rel="noopener" data-gallery="zwocoglam" data-caption="Zwocoglam Creations — Services">
+                    <img src="assets/projects/zwocoglam/Project3.png" alt="Zwocoglam Creations services page" width="1287" height="427" loading="lazy" />
+                    <span>Services</span>
+                  </a>
+                  <a class="image-viewer-link" href="assets/projects/zwocoglam/Project4.png" target="_blank" rel="noopener" data-gallery="zwocoglam" data-caption="Zwocoglam Creations — Booking form">
+                    <img src="assets/projects/zwocoglam/Project4.png" alt="Appointment booking form on the Zwocoglam Creations website" width="1015" height="622" loading="lazy" />
+                    <span>Booking form</span>
+                  </a>
+                  <a class="image-viewer-link" href="assets/projects/zwocoglam/Project5.png" target="_blank" rel="noopener" data-gallery="zwocoglam" data-caption="Zwocoglam Creations — Footer">
+                    <img src="assets/projects/zwocoglam/Project5.png" alt="Footer section of the Zwocoglam Creations website" width="985" height="336" loading="lazy" />
+                    <span>Footer</span>
+                  </a>
+                  <a class="image-viewer-link" href="assets/projects/zwocoglam/Project6.png" target="_blank" rel="noopener" data-gallery="zwocoglam" data-caption="Zwocoglam Creations — Admin login">
+                    <img src="assets/projects/zwocoglam/Project6.png" alt="Admin login screen for Zwocoglam Creations" width="430" height="480" loading="lazy" />
+                    <span>Admin login</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__visual">
+                <a class="image-viewer-link project-card__image-link" href="assets/projects/UrbanThreads.png" target="_blank" rel="noopener" data-gallery="urban-threads" data-caption="Urban Threads — storefront preview">
+                  <img src="assets/projects/UrbanThreads.png" alt="Urban Threads online clothing storefront" width="747" height="610" loading="lazy" />
+                  <span class="image-hint">View screenshot <span aria-hidden="true">↗</span></span>
+                </a>
+                <span class="project-status"><span></span> Completed</span>
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">02 / E-commerce</p>
+                <h3>Urban Threads</h3>
+                <p class="project-card__description">
+                  A storefront for browsing products, signing in, adding items
+                  to a cart and confirming checkout.
+                </p>
+                <p class="project-role"><strong>My role:</strong> Front-end development and Firebase integration</p>
+                <ul class="feature-list">
+                  <li>Product browsing and authentication</li>
+                  <li>Shopping cart and checkout confirmation</li>
+                </ul>
+                <div class="tag-list" aria-label="Technologies">
+                  <span>React</span><span>Firebase Authentication</span><span>Firestore</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://phemelourbanstore.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-urbanthreads" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__visual">
+                <a class="image-viewer-link project-card__image-link" href="assets/projects/amazon.png" target="_blank" rel="noopener" data-gallery="amazon-learning-project" data-caption="Amazon Clone — learning project storefront">
+                  <img src="assets/projects/amazon.png" alt="Storefront interface for the Amazon Clone learning project" width="1337" height="625" loading="lazy" />
+                  <span class="image-hint">View screenshot <span aria-hidden="true">↗</span></span>
+                </a>
+                <span class="project-status"><span></span> Completed</span>
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">03 / Learning project</p>
+                <h3>Amazon Clone</h3>
+                <p class="project-card__description">
+                  A learning project inspired by an online storefront, built to
+                  practise React, Firebase and Stripe integration. It is not
+                  affiliated with Amazon.
+                </p>
+                <p class="project-role"><strong>My role:</strong> Front-end development and Firebase / Stripe integration</p>
+                <ul class="feature-list">
+                  <li>Authentication and shopping basket</li>
+                  <li>Stripe checkout integration in a learning project</li>
+                </ul>
+                <div class="tag-list" aria-label="Technologies">
+                  <span>React</span><span>Firebase</span><span>Stripe</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://phemelo-amazon-store.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-amazon-store" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__visual">
+                <a class="image-viewer-link project-card__image-link" href="assets/projects/Feedback-automation.png" target="_blank" rel="noopener" data-gallery="feedback-automation" data-caption="Student Feedback Automation — form preview">
+                  <img src="assets/projects/Feedback-automation.png" alt="Student feedback form used in the feedback automation project" width="645" height="607" loading="lazy" />
+                  <span class="image-hint">View screenshot <span aria-hidden="true">↗</span></span>
+                </a>
+                <span class="project-status"><span></span> Completed</span>
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">04 / Workflow automation</p>
+                <h3>Student Feedback Automation</h3>
+                <p class="project-card__description">
+                  A feedback collection workflow that routes responses and
+                  sends a thank-you email.
+                </p>
+                <p class="project-role"><strong>My role:</strong> React form development and automation integration</p>
+                <ul class="feature-list">
+                  <li>Required-field checks and rating-based routing</li>
+                  <li>Stored submissions and thank-you emails</li>
+                </ul>
+                <div class="tag-list" aria-label="Technologies">
+                  <span>React</span><span>n8n</span><span>Firestore</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://phemelon8n.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-n8n-workflow" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact section: social links and simple contact form -->
-    <section id="contact">
-      <div class="container p-5">
-         <div class="card p-3">
-             <div class="card-body px-5 text-center">
-              <h1 class><mark>Let's Connect</mark></h1>
-              <p class="lead">Would love to connect with fellow developers, employers looking for developers, or anyone looking to get web development done.</p>
-                <p class="fs-2">
-                  <a class="fs-2" href="" 
-                  target="_blank"><i class="bi bi-instagram m-2"></i></a>
-
-                  <a class="fs-2" href="" 
-                  target="_blank"><i class="bi bi-linkedin m-2"></i></a>
-
-                  <a class="fs-2" href="" 
-                  target="_blank"><i class="bi bi-github m-2"></i></a>
-
-                </p>
-            <form>
-              <div class="mb-3">
-                
-                <input
-                  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email Address"/>
+      <section class="section section--earlier-projects" aria-labelledby="earlier-projects-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span> More things I've built</p>
+            <h2 id="earlier-projects-title">Earlier <span class="text-accent">projects</span></h2>
+            <p>A few more experiments and builds from my portfolio.</p>
+          </div>
+          <div class="earlier-projects-grid">
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" alt="Netflix-inspired landing page project" width="750" height="422" loading="lazy" />
               </div>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" placeholder="Enter Name"/>
+              <div class="project-card__content">
+                <p class="project-kicker">HTML &amp; CSS</p>
+                <h3>Netflix Landing Page</h3>
+                <p class="project-card__description">A landing page recreation built with HTML and CSS.</p>
+                <div class="project-links">
+                  <a href="https://phemelo-watchmovies.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-netflix-clone.git" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
               </div>
-
-              <div class="mb-3">    
-                <input type="text" class="form-control" id="subject" placeholder="Enter Subject"/>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/Tesla.png" alt="Tesla-inspired landing page project" width="750" height="422" loading="lazy" />
               </div>
-
-              <div class="mb-3">
-                <textarea class="form-control" aria-label="with textarea" placeholder="Enter Message"></textarea>
+              <div class="project-card__content">
+                <p class="project-kicker">HTML &amp; CSS</p>
+                <h3>Tesla Landing Page</h3>
+                <p class="project-card__description">A responsive landing page recreation built with HTML and CSS.</p>
+                <div class="project-links">
+                  <a href="https://phemelo-ecars.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/My-First-Test-Project.git" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
               </div>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/html_youtube.png" alt="YouTube-inspired page project" width="750" height="422" loading="lazy" />
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">HTML &amp; CSS</p>
+                <h3>YouTube Page</h3>
+                <p class="project-card__description">A page recreation built with HTML and CSS.</p>
+                <div class="project-links">
+                  <a href="https://phemelo-faketube.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-faketube-clone.git" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://res.cloudinary.com/ak-124210/image/upload/v1642434078/yjnzwmihmhghxkwnb6n9.png" alt="Twitter page project preview" width="750" height="422" loading="lazy" />
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">Earlier build</p>
+                <h3>Twitter Page</h3>
+                <p class="project-card__description">A social-media page recreation. Project links are not available.</p>
+              </div>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/reactintro.png" alt="React JS project preview" width="750" height="422" loading="lazy" />
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">React</p>
+                <h3>React JS project</h3>
+                <p class="project-card__description">An earlier project built with React. Project links are not available.</p>
+              </div>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/react_airbnb.png" alt="Accommodation booking project preview" width="750" height="422" loading="lazy" />
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">Earlier build</p>
+                <h3>Airbnb Clone</h3>
+                <p class="project-card__description">A clone project featuring a stay-booking experience.</p>
+                <div class="project-links">
+                  <a href="https://phemelohotels.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-airbnb.git" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+            <article class="project-card earlier-project-card">
+              <div class="project-card__visual">
+                <img src="https://res.cloudinary.com/ak-124210/image/upload/v1668200511/uum4ptpgm3lroibx4j9e.png" alt="Tic Tac Toe game project preview" width="750" height="422" loading="lazy" />
+              </div>
+              <div class="project-card__content">
+                <p class="project-kicker">React</p>
+                <h3>Tic Tac Toe</h3>
+                <p class="project-card__description">A Tic Tac Toe game built with React.</p>
+                <div class="project-links">
+                  <a href="https://phemelo-tictactoe.netlify.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+                  <a href="https://github.com/PaulDevOP15/phemelo-tictactoe.git" target="_blank" rel="noopener">Code <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-              <button type="submit" class="btn btn-primary">Submit</button>
+      <section class="section section--about" id="about" aria-labelledby="about-title">
+        <div class="page-width about-layout">
+          <div class="portrait-frame">
+            <div class="portrait-frame__glow" aria-hidden="true"></div>
+            <img
+              src="assets/banner.jpeg"
+              alt="Portrait of Phemelo Makaota"
+              width="1968"
+              height="1720"
+              loading="lazy"
+            />
+            <span class="portrait-caption"><span></span> Building with curiosity</span>
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow"><span></span> A little about me</p>
+            <h2 id="about-title">About me</h2>
+            <p>
+              I’m Phemelo Makaota, a junior full-stack web developer based in
+              Pretoria, South Africa. I use JavaScript, React, Node.js, Express,
+              MongoDB and Firebase to build web applications, connecting
+              responsive interfaces with APIs, databases and authentication.
+            </p>
+            <p>
+              My project experience includes e-commerce, appointment booking
+              and workflow automation, with features such as shopping carts,
+              payment integration, availability checks and email notifications.
+              I enjoy solving practical problems and understanding how each
+              part of an application works together. I’m seeking a junior
+              developer role where I can contribute and develop my skills, and
+              I’m also available for freelance website projects.
+            </p>
+            <a class="text-link" href="#contact">Let's talk about what you're building <span aria-hidden="true">↗</span></a>
+            <a class="button button--quiet download-button" href="assets/Phemelo-Makaota-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
 
+      <section class="section section--skills" id="skills" aria-labelledby="skills-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span> Tools of the trade</p>
+            <h2 id="skills-title">Skills &amp; <span class="text-accent">technologies</span></h2>
+            <p>Technologies I use to build, connect and improve digital experiences.</p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-group">
+              <h3><span class="skill-icon" aria-hidden="true">&lt;/&gt;</span> Front end</h3>
+              <ul class="skill-list">
+                <li><span>HTML</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>CSS</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>JavaScript</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>React</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3><span class="skill-icon" aria-hidden="true">{ }</span> Back end &amp; data</h3>
+              <ul class="skill-list">
+                <li><span>Node.js</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>Express</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>MongoDB</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>Firebase</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+              </ul>
+            </article>
+            <article class="skill-group">
+              <h3><span class="skill-icon" aria-hidden="true">↗</span> Tools &amp; workflows</h3>
+              <ul class="skill-list">
+                <li><span>Git / GitHub</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+                <li><span>n8n</span><span class="skill-meter" aria-hidden="true"><span></span></span></li>
+              </ul>
+            </article>
+          </div>
+          <p class="skills-note">Skill self-assessment levels can be added when ready.</p>
+        </div>
+      </section>
 
-            </form>
-                </p>
-             </div>
-         </div>
+      <section class="section section--services" id="services" aria-labelledby="services-title">
+        <div class="page-width">
+          <div class="section-heading">
+            <p class="eyebrow"><span></span> How I can help</p>
+            <h2 id="services-title">Digital ideas, <span class="text-accent">made practical.</span></h2>
+            <p>Flexible web development support for businesses and growing ideas.</p>
+          </div>
+          <div class="services-grid">
+            <article class="service-card"><span class="service-card__number">01</span><h3>Business websites</h3><p>Clear, responsive websites to introduce your business and help customers find you online.</p><span class="service-card__arrow" aria-hidden="true">↗</span></article>
+            <article class="service-card"><span class="service-card__number">02</span><h3>E-commerce websites</h3><p>Online storefronts with product browsing and practical shopping experiences.</p><span class="service-card__arrow" aria-hidden="true">↗</span></article>
+            <article class="service-card"><span class="service-card__number">03</span><h3>Booking systems</h3><p>Appointment flows that help visitors explore services and request a booking.</p><span class="service-card__arrow" aria-hidden="true">↗</span></article>
+            <article class="service-card"><span class="service-card__number">04</span><h3>Workflow automation</h3><p>Connected forms and workflows to make routine digital tasks more manageable.</p><span class="service-card__arrow" aria-hidden="true">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="page-width contact-content">
+          <p class="eyebrow"><span></span> Have a project in mind?</p>
+          <h2 id="contact-title">Let's build something<br /><span class="text-accent">that works for you.</span></h2>
+          <p>Whether you're hiring a junior developer or planning a website for your business, I'd be glad to hear from you.</p>
+          <a class="button button--primary contact-email" href="mailto:makaotap2@gmail.com">makaotap2@gmail.com <span aria-hidden="true">↗</span></a>
+          <div class="social-links" aria-label="Social media">
+            <a href="https://github.com/PaulDevOP15" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://www.linkedin.com/in/phemelo-makaota-6965792b3/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+            <a href="https://www.instagram.com/papii__rsa/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width site-footer__inner">
+        <a class="brand" href="#home"><span class="brand__mark" aria-hidden="true">&lt;/&gt;</span><span>Phemelo<span class="brand__accent">.</span></span></a>
+        <p>Designed &amp; built by Phemelo Makaota.</p>
+        <a class="back-to-top" href="#home">Back to top ↑</a>
       </div>
-    </section>
-
-    <!-- Footer with attribution text -->
-    <footer class="bg-dark text-center text-white p-3">
-        <div class="container p-5">
-            <p>Developed by Phemelo Makaota using Bootstrap, for Zaio Bootstrap course</p>
-        </div>
     </footer>
 
+    <dialog class="image-dialog" aria-label="Project screenshot viewer">
+      <div class="image-dialog__top">
+        <p class="image-dialog__caption"></p>
+        <button class="image-dialog__close" type="button" aria-label="Close screenshot viewer">Close <span aria-hidden="true">×</span></button>
+      </div>
+      <figure>
+        <img class="image-dialog__image" src="" alt="Selected project screenshot" />
+        <figcaption class="visually-hidden image-dialog__figcaption"></figcaption>
+      </figure>
+      <div class="image-dialog__controls">
+        <button class="image-dialog__previous" type="button" aria-label="Previous screenshot">← Previous</button>
+        <span class="image-dialog__position" aria-live="polite"></span>
+        <button class="image-dialog__next" type="button" aria-label="Next screenshot">Next →</button>
+      </div>
+    </dialog>
   </body>
 </html>
